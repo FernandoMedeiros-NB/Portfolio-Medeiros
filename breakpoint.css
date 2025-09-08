@@ -1,0 +1,55 @@
+
+/* ======== TABLETS (até 1024px) ======== */
+@media (max-width: 1024px) {
+  .titulo-sobre h1, .titulo-contato h1 {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+
+  .psobre, .contato p {
+    font-size: 17px;
+    margin-left: 20px;
+    max-width: 90%;
+  }
+
+  .redessociais {
+    margin-left: 20px;
+    gap: 15px;
+  }
+
+  .redessociais img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* ======== CELULARES (até 600px) ======== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .titulo-sobre h1, .titulo-contato h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .psobre, .contato p {
+    font-size: 16px;
+    margin: 15px 0 15px 10px;
+    max-width: 100%;
+    padding-right: 10px;
+  }
+
+  .redessociais {
+    margin-left: 10px;
+    gap: 10px;
+    flex-wrap: wrap; /* quebra linha se não couber */
+  }
+
+  .redessociais img {
+    width: 30px;
+    height: 30px;
+  }
+}

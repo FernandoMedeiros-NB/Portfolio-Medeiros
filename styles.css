@@ -99,6 +99,18 @@ body {
 .desenvolvedor {
     color: #ad4e05d2;
     font-weight: bold;
+    animation: brilho-movendo 0.7s linear infinite;
+    background: linear-gradient(90deg, #ff7308, #ad4e05df, #ff7308);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes brilho-movendo {
+    to {
+        background-position: -200% center;
+    }
 }
 
 .linguagens {
@@ -129,6 +141,23 @@ header a:hover {
     font-weight: 600;
 }
 
+#Fernando {
+    color: #ad4e05d2;
+    background: linear-gradient(90deg, #ff7308, #ad4e0598, #ff7308);
+    background-size: 200% auto;
+    color: #000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: brilho-movendo 4s linear infinite;
+}
+
+@keyframes brilho-movendo {
+    to {
+        background-position: -200% center;
+    }
+}
+
 img {
     width: 20px;
     height: 20px;
@@ -141,7 +170,9 @@ img {
     padding: 10px;
     background-color: #0e0d0d;
     text-align: left;
-    margin-left: 40px; 
+    width: 100%;
+    margin: 0;
+    padding-left: 40px;
 
 }
 
@@ -220,59 +251,4 @@ img {
 
 .rodape a {
     text-decoration: none;
-}
-
-
-/* Tablets */
-@media (max-width: 1024px) {
-    .introducao {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .conteudo {
-        margin-top: 40px;
-        max-width: 90%;
-    }
-
-    .psobre {
-        margin: 20px auto;
-        padding: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column;
-        padding: 15px;
-        text-align: center;
-    }
-
-    header h1 {
-        margin-bottom: 10px;
-    }
-
-    .hotbarbotoes {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .h1text {
-        font-size: 32px;
-    }
-
-    .h2text {
-        font-size: 20px;
-    }
-
-    .psobre {
-        font-size: 16px;
-    }
-
-    .contato p {
-        font-size: 16px;
-    }
-
 }
