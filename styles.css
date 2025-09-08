@@ -252,3 +252,87 @@ img {
 .rodape a {
     text-decoration: none;
 }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#sobremim,
+#hcontato {
+    scroll-margin-top: 100px;
+    /* altura aproximada do seu header */
+}
+/* Título da seção */
+.h1portfolio {
+    font-size: 35px;
+    color: #ffffff;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #0e0d0d;
+    text-align: center;
+}
+
+/* Texto introdutório */
+.pportfolio {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Grid dos cards */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+/* Cada card */
+.card {
+    background: #0e0d0d;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 8px 8px;
+    display: block;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: #ad4e05d2;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card a:hover {
+    background: #ff903b;
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(173, 78, 5, 0.5);
+}

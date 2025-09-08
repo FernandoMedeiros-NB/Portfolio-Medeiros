@@ -18,7 +18,7 @@
             <div class="hotbarbotoes">
                 <a id="botoes" href="#voltarhome">Home</a>
                 <a id="botoes" href="#sobremim">Sobre</a>
-                <a id="botoes" href="#">Projetos</a>
+                <a id="botoes" href="#portfolio">Projetos</a>
                 <a id="botoes" href="#hcontato">Contato</a>
             </div>
 
@@ -26,28 +26,57 @@
     </div>
     <div id="voltarhome" class="introducao">
         <div class="conteudo">
-            <h1 class="h1text">Olá, sou Fernando</h1>
-            <h2 class="h2text">Futuro Desenvolvedor Frontend</h2>
-            <p class="pintroducao">Sou estudante de desenvolvimento web com conhecimentos em HTML, CSS e JavaScript. Que
+            <h1 class="h1text reveal">Olá, sou Fernando</h1>
+            <h2 class="h2text reveal">Futuro Desenvolvedor Frontend</h2>
+            <p class="pintroducao reveal">Sou estudante de desenvolvimento web com conhecimentos em HTML, CSS e
+                JavaScript. Que
                 tal contribuir com
                 minha futura carreira como Dev?</p>
-            <button id="botaoconverse" onclick="window.open('https://wa.me//5581987732642')"><span class="conversetexto">Converse comigo</span></button>
+            <button id="botaoconverse" onclick="window.open('https://wa.me//5581987732642')"><span
+                    class="conversetexto">Converse comigo</span></button>
             </button>
         </div>
     </div>
     <div id="sobremim" class="sobre">
-        <h1 class="h1sobre">Sobre mim</h1>
-        <p class="psobre">Sou estudante de desenvolvimento web, futuro <span class="desenvolvedor">Desenvolvedor
+        <h1 class="h1sobre reveal">Sobre mim</h1>
+        <p class="psobre reveal">Sou estudante de desenvolvimento web, futuro <span class="desenvolvedor">Desenvolvedor
                 frontend</span>. Gosto de transformar ideias em
             projetos reais e funcionais. Meu objetivo é criar interfaces intuitivas e responsivas, que proporcionem
             experiências agradáveis para os usuários, através de linguagens como <span class="linguagens">HTML,
                 CSS, JavaScript</span> e outras.</p>
+        <div id="portfolio" class="portfolio reveal">
+
+            <h1 class="h1portfolio reveal">Projetos & Certificados</h1>
+            <p class="pportfolio reveal">Aqui você encontra alguns projetos que desenvolvi e certificados conquistados ao longo
+                da minha jornada.</p>
+
+            <div class="portfolio-grid reveal">
+                <!-- Exemplo de card de projeto -->
+                <div class="card">
+                    <img src="Captura de Tela (1).png" alt="Projeto 1">
+                    <h2>Minha Página</h2>
+                    <p>Minha Web página personalizada</p>
+                    <a href="#home" target="_blank">Veja aqui</a>
+                </div>
+
+                <!-- Exemplo de certificado -->
+                <div class="card">
+                    <img src="Certificado RL System - Curso de HTML e CSS - Portfolio.png" alt="Certificado 1">
+                    <h2>Certificado RL System</h2>
+                    <p>Curso de HTML e CSS - Portfólio</p>
+                    <a href="certificado1.html" target="_blank">Abrir certificado</a>
+                </div>
+                
+            </div>
+        </div>
+
 
         <div id="hcontato" class="contato">
-            <h1>Contato</h1>
-            <p>Entre em contato por email <span class="email">fernando.prado090108@gmail.com</span>, ou através das
+            <h1 class="reveal">Contato</h1>
+            <p class="reveal">Entre em contato por email <span class="email">fernando.prado090108@gmail.com</span>, ou
+                através das
                 redes sociais:</p>
-            <div class="redessociais">
+            <div class="redessociais reveal">
                 <a href="#" target="_blank">
                     <img id="linkedin"
                         src="vecteezy_linkedin-letter-white-logo-icon-app-transparent-background_65386589.png"
@@ -64,9 +93,7 @@
                         alt="Meu Whatsapp">
                 </a>
                 <a href="https://github.com/FernandoMedeiros-NB" target="_blank">
-                    <img id="github"
-                        src="githublogo.png"
-                        alt="Meu Github">
+                    <img id="github" src="githublogo.png" alt="Meu Github">
                 </a>
             </div>
 
@@ -75,6 +102,7 @@
     <footer class="rodape">
         <p>© 2025 Fernando Medeiros. - Todos os direitos reservados.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
