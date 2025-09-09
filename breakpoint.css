@@ -53,3 +53,8 @@
     height: 30px;
   }
 }
+@media (max-width: 800px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}

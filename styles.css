@@ -21,7 +21,7 @@ header {
 
 body {
     min-height: 100vh;
-    background: #000000 url("IMG_9014.JPEG1.jpg") no-repeat right;
+    background: #000000 url("assets/img/IMG_9014.JPEG1.jpg") no-repeat right;
     background-size: contain;
     background-position-y: 10%;
     /* ajusta verticalmente */
@@ -37,7 +37,7 @@ body {
 
 .conteudo {
     max-width: 550px;
-    margin-top: 70px;
+    margin-top: 270px;
 }
 
 .h1text {
@@ -80,7 +80,7 @@ body {
 .h1sobre {
     font-size: 35px;
     color: #ffffff;
-    margin-top: 80px;
+    margin-top: 250px;
     padding: 10px;
     background-color: #0e0d0d;
     text-align: center;
@@ -93,7 +93,7 @@ body {
     text-align: justify;
     max-width: 800px;
     padding: 30px;
-    padding-block-end: 90px;
+    padding-block-end: 70px;
 }
 
 .desenvolvedor {
@@ -173,6 +173,7 @@ img {
     width: 100%;
     margin: 0;
     padding-left: 40px;
+    margin-bottom: 60px;
 
 }
 
@@ -269,6 +270,7 @@ img {
     scroll-margin-top: 100px;
     /* altura aproximada do seu header */
 }
+
 /* Título da seção */
 .h1portfolio {
     font-size: 35px;
@@ -281,11 +283,12 @@ img {
 
 /* Texto introdutório */
 .pportfolio {
-    font-size: 18px;
+    font-size: 19px;
     color: #ffffff;
     margin: 20px auto;
     text-align: center;
     max-width: 800px;
+    margin-top: 60px;
 }
 
 /* Grid dos cards */
@@ -306,8 +309,8 @@ img {
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 0px;
 }
-
 .card img {
     width: 100%;
     height: 200px;
@@ -334,5 +337,42 @@ img {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 5px 15px rgba(173, 78, 5, 0.5);
+    box-shadow: 0px 5px 25px rgba(173, 78, 5, 0.401);
+}
+
+/* Container com duas colunas */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* duas colunas iguais */
+    gap: 40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Cada coluna (Projetos / Certificados) */
+.portfolio-col {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Título da coluna */
+.col-title {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ad4e05d2;
+    padding-bottom: 5px;
+}
+
+.texprojetos {
+    color: #ad4e05;
+    font-weight: bold;
+}
+
+.texcertificados {
+    color: #ad4e05;
+    font-weight: bold;
 }
